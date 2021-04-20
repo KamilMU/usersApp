@@ -1,0 +1,10 @@
+.users {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.users input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 2px;
+}

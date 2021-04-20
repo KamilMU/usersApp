@@ -1,0 +1,42 @@
+.login {
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+.login input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.login label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.login button {
+  outline: none;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.inputFeedback {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+}
