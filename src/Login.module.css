@@ -1,6 +1,4 @@
 .login {
-  max-width: 300px;
-  max-height: 300px;
   margin: auto;
 }
 
@@ -13,8 +11,6 @@
 }
 
 .login input {
-  margin-bottom: 10px;
-  padding: 10px;
   border-radius: 2px;
 }
 
@@ -32,11 +28,41 @@
   font-weight: bold;
   cursor: pointer;
   border-radius: 2px;
-  padding: 10px;
 }
 
 .inputFeedback {
   color: red;
   font-size: 14px;
   font-weight: 400;
+}
+
+@media (max-width: 760px) {
+  .login {
+    min-width: 360px;
+  }
+
+  .login input {
+    padding: 21px;
+    margin-bottom: 24px;
+  }
+
+  .login button {
+    padding: 21px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 761px) {
+  .login {
+    min-width: 300px;
+  }
+
+  .login input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .login button {
+    padding: 10px;
+  }
 }

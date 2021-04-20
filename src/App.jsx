@@ -45,8 +45,8 @@ function App({ history }) {
       })
   }
 
-  function sortUsersById(ckecked) {
-    if (ckecked) {
+  function sortUsersById(checked) {
+    if (checked) {
       const sorted = [...users].sort((a, b) => (a.id > b.id ? -1 : 1));
 
       setUsers(sorted);
