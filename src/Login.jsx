@@ -4,7 +4,12 @@ import * as Yup from 'yup';
 import styles from './Login.module.css';
 import { withRouter } from "react-router";
 
-function Login({ loginUser, username, password, setPassword, setUsername }) {
+function Login({
+  loginUser,
+  username,
+  password,
+  setPassword,
+  setUsername }) {
   return (
     <div className={styles.login}>
       <Formik
@@ -26,11 +31,8 @@ function Login({ loginUser, username, password, setPassword, setUsername }) {
       >
         {props => {
           const {
-            values,
             touched,
             errors,
-            isSubmitting,
-            handleChange,
             handleBlur,
             handleSubmit
           } = props;

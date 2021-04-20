@@ -1,15 +1,19 @@
 import React from 'react';
 import styles from './UserList.module.css';
 
-export default function UserList({ users, sortUsersById }) {
+function UserList({ users, sortUsersById }) {
   return (
     <table className={styles.userList}>
       <tbody>
         <tr>
-          <th
-            onClick={sortUsersById}
-            className={styles.idTittle}>
+          <th className={styles.idTittle}>
             Id
+            <input
+              type="checkbox"
+              onClick={(e) => {
+                sortUsersById(e.target.checked);
+              }}
+            />
           </th>
           <th>Username</th>
         </tr>
@@ -26,3 +30,5 @@ export default function UserList({ users, sortUsersById }) {
     </table>
   )
 }
+
+export default UserList;
